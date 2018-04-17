@@ -14,4 +14,4 @@ twig:
         tags:
           - { name: sonata.admin.filter.type, alias: doctrine_orm_number_range }
 4. Ex. to used in configureDatagridFilters
-->add('price', 'doctrine_orm_number_range')
+->add('field', 'doctrine_orm_number_range')
