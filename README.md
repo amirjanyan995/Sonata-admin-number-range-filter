@@ -5,13 +5,13 @@ twig:
 		- YourBundle:form:number_range.html.twig
 3. service.yaml
     app.admin.form.type.number_range:
-        class: AppBundle\Form\NumberRangeType
+        class: YourBundle\Form\NumberRangeType
         tags:
           - { name: form.type, alias: app_admin_type_number_range }
 
     app.form.number.range:
-        class: AppBundle\Form\NumberRangeFilter
+        class: YourBundle\Form\NumberRangeFilter
         tags:
           - { name: sonata.admin.filter.type, alias: doctrine_orm_number_range }
 4. Ex. to used in configureDatagridFilters
-->add('price', 'doctrine_orm_number_range')
+->add('field', 'doctrine_orm_number_range')
